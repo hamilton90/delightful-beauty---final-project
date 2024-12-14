@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Product Website</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body class="showCart">
+    <header>
+        <h1>Skincare Essentials</h1>
+        <nav>
+           
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                  <a class="navbar-brand" href="homepage.html">HOME</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="skincare.html">SKINCARE</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="makeup.html">MAKEUPS</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+        
+                <div id="container"></div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="products">
+            <div class="product">
+                <img src="moisturizer.jpg" alt="Item1">
+                <h2>MOIRA</h2>
+                <p>Hyaluronic Oil Free Matte Moisturizer</p>
+                <p>&#8369;800.00</p>
+                <button onclick="addtoCart('Item1')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="moisturizer1.jpg" alt="Item2">
+                <h2>AQUA BOMB</h2>
+                <p>The True Cream Aqua Bomb Lightweight Face Moisturizer For All Skin Type</p>
+                <p> &#8369;3,682.00</p>
+                <button onclick="addtoCart('Item2')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="moisturizer2.jpg" alt="Item3">
+                <h2>FARMACY</h2>
+                <p>10% Niacinamide Night Mask Smooths + Refines Pores</p>
+                <p> &#8369;6,544.53</p>
+                <button onclick="addtoCart('Item3')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="moisturizer3.jpg" alt="Item4">
+                <h2>CERAVE</h2>
+                <p>moisturising Cream For Dry to Very Dry Skin</p>
+                <p> &#8369;1,077.00</p>
+                <button onclick="addtoCart('Item4')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="moisturizer4.jpg" alt="Item5">
+                <h2>OLAY REGENERIST</h2>
+                <p>Micro-Sculpting Cream Fragrance-Free</p>
+                <p> &#8369;1,711.13</p>
+                <button onclick="addtoCart('Item5')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="toner.jpg" alt="Item6">
+                <h2>YEOJU KOREA</h2>
+                <p>Moisturizing Brightening Toner and Non-greasy Whitening Toner</p>
+                <p> &#8369;3,3222.50</p>
+                <button onclick="addtoCart('Item6')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="toner3.jpg" alt="Item7">
+                <h2>FLORENCE </h2>
+                <p>By Mills Spotlight Toner</p>
+                <p> &#8369;4,571.00</p>
+                <button onclick="addtoCart('Item7')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="toner1.jpg" alt="Item8">
+                <h2>AQUA BOOSTING ESSENCE TONER</h2>
+                <p>Advanced Aqua Boosting Ampoule</p>
+                <p> &#8369;1,136.00</p>
+                <button onclick="addtoCart('Item8')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="toner2.jpg" alt="Item9">
+                <h2>MADAGASCAR CENTELLA</h2>
+                <p>Tone Brightening Capsule Ampoule</p>
+                <p> &#8369;299.00</p>
+                <button onclick="addtoCart('Item9')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="toner4.jpg" alt="Item10">
+                <h2>GLOW RECIPE</h2>
+                <p>Watermelon Glow PHA+ BHA Pore-Tight Toner</p>
+                <p> &#8369;2,065.03</p>
+                <button onclick="addtoCart('Item10')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="serum.jpg" alt="Item11">
+                <h2>ANUA SERUM</h2>
+                <p>Dark Spot Correcting Serum Niacinamide</p>
+                <p> &#8369;249.00</p>
+                <button onclick="addtoCart('Item11')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="serum1.jpg" alt="Item12">
+                <h2>HERBIVORE BAKUCHIOL SERUM</h2>
+                <p>Pink Cloud Cleanser Blue Tansy</p>
+                <p> &#8369;3,200.00</p>
+                <button onclick="addtoCart('Item12')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="serum2.jpg" alt="Item13">
+                <h2>GARNIER VITAMIN C </h2>
+                <p>Serum Cream SPF25</p>
+                <p> &#8369;784.18</p>
+                <button onclick="addtoCart('Item13')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="serum3.jpg" alt="Item14">
+                <h2>EVA NATURALS VITAMIN C SERUM</h2>
+                <p>Plus With Hyaluronic Acid Serum</p>
+                <p> &#8369;2,766.00</p>
+                <button onclick="addtoCart('Item14')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="serum4.jpg" alt="Item15">
+                <h2>The Ordinary</h2>
+                <p>Niacinamide 10% + Zinc 1%</p>
+                <p> &#8369;135.00</p>
+                <button onclick="addtoCart('Item15')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="sunscreen.jpg" alt="Item16">
+                <h2>NEUTROGENA HYDRO BOOST </h2>
+                <p>Face Sunscreen SPF 50</p>
+                <p> &#8369;899.00</p>
+                <button onclick="addtoCart('Item16')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="sunscreen1.jpg" alt="Item17">
+                <h2>FAIRY SKIN</h2>
+                <p> Premium Brightening Sunscreen SPF 50</p>
+                <p> &#8369;3,3222.50</p>
+                <button onclick="addtoCart('Item17')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="sunscreen2.jpg" alt="Item18">
+                <h2>BELLO SUN EXPERT</h2>
+                <p>DSPF 50 Whitening Sunscreen</p>
+                <p> &#8369;279.00</p>
+                <button onclick="addtoCart('Item18')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="sunscreen3.jpg" alt="Item19">
+                <h2>POND'S UV PROTECT SUN SERUM</h2>
+                <p>SPF 35 PA++ UVA UVB</p>
+                <p> &#8369;118.00</p>
+                <button onclick="addtoCart('Item19')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="sunscreen4.jpg" alt="Item20">
+                <h2>PCETAPHIL SPF 50</h2>
+                <p>Ultra-Light Lotion Very High Protection</p>
+                <p> &#8369;118.00</p>
+                <button onclick="addtoCart('Item20')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="cleanser.jpg" alt="Item21">
+                <h2>ANUA HEARTLEAF </h2>
+                <p> Pore Control Cleansing Oil For Acne-Prone Skin</p>
+                <p> &#8369;635.00</p>
+                <button onclick="addtoCart('Item21')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="cleanser1.jpg" alt="Item22">
+                <h2>NIVEA FACE CLEANSER MICELLAIR</h2>
+                <p>Acne Clear Miccelar Water</p>
+                <p> &#8369;185.00</p>
+                <button onclick="addtoCart('Item22')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="cleanser3.jpg" alt="Item23">
+                <h2>GARNIER SKIN ACTIVE</h2>
+                <p>Micellar Cleansing Water Pink</p>
+                <p> &#8369;133.80</p>
+                <button onclick="addtoCart('Item23')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="cleanser2.jpg" alt="Item24">
+                <h2>NEUTROGENA</h2>
+                <p>Hydro Boost Water Gel Cleanser</p>
+                <p> &#8369;440.00</p>
+                <button onclick="addtoCart('Item24')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="cleanser4.jpg" alt="Item25">
+                <h2>NIVEA</h2>
+                <p>Micellar Water Skin Glow + 5% Serum With Vitamin C & E</p>
+                <p> &#8369;440.00</p>
+                <button onclick="addtoCart('Item25')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="eyecream.jpg" alt="Item26">
+                <h2>CETAPHIL HYDRATING EYE CREAM GEL</h2>
+                <p>With Hyarulonic Acid For All Skin Types</p>
+                <p> &#8369;578.03</p>
+                <button onclick="addtoCart('Item26')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="eyecream1.jpg" alt="Item27">
+                <h2>SOME BY MI </h2>
+                <p>100% Authentic Advanced Triple Action Anti-Aging </p>
+                <p> &#8369;1,299.00</p>
+                <button onclick="addtoCart('Item27')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="eyecream2.jpg" alt="Item28">
+                <h2>TIPTIR</h2>
+                <p>Collagen Lifting Eye Cream</p>
+                <p> &#8369;1,151.00</p>
+                <button onclick="addtoCart('Item28')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="eyecream3.jpg" alt="Item29">
+                <h2>PURITO SEOUL</h2>
+                <p>Wonder Releaf Centella Eye Cream Unscented</p>
+                <p> &#8369;565.00</p>
+                <button onclick="addtoCart('Item29')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="eyecream4.jpg" alt="Item30">
+                <h2>CERAVE</h2>
+                <p>Eye Repair Cream With 3 Essential Ceramides & Hyaluronic Acid</p>
+                <p> &#8369;565.00</p>
+                <button onclick="addtoCart('Item30')">Add to Cart</button>
+            </div>
+        </section>
+    </main>
+        <div class="cart-section">
+            <h1>SHOPPING CART</h1>
+            <ul id="cart-items"></ul>
+            <p id="empty-message">Your cart is empty.</p>
+            <button id="checkout-btn" onclick="checkout()" style="display: none;">CHECKOUT</button>
+        </div>
+    <div id="checkout-section" class="checkout-section" style="display: none;">
+        <h1>CHECKOUT SUMMARY</h1>
+        <ul id="checkout-items"></ul>
+        <p id="total-items">Total Items : 0</p>
+        <button onclick="confirmOrder()">Confirm Order</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

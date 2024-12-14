@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delightful Beauty</title>
+</head>
+<style>
+   body{
+    background-color: #f9eaf2;
+   }
+   *{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+   }
+   ul{
+    list-style: none;
+   }
+   a{
+    text-decoration: none;
+   }
+   .navigation{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px 0px;
+    width:90%;
+    margin: auto;
+    max-width: 1100px;
+   }
+   .logo{
+    font-size: 1.8rem;
+    color: pink;
+    font-weight: 800;
+    text-transform: uppercase;
+   }
+   .logo img{
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    max-height: 150px;
+   }
+   .search{
+    width: 280px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 30px;
+    padding: 0px 20px;
+    margin-left: auto;
+   }
+   .search input{
+    width: 95%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+   }
+   .search button{
+    color: pink;
+    border: none;
+    outline: navajowhite;
+    background-color: transparent;
+    cursor: pointer;
+   }
+   .search button img{
+    height: 100%;
+    object-fit: contain;
+    object-position: right;
+    max-height: 40px;
+   }
+   .webtext{
+    background-color: #f47b99;
+    padding: 5px;
+   }
+   .webtext h4{
+    color: white;
+    text-align: center;
+   }
+   .nav-btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   .nav-btns a{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #e488a1;
+    font-size: 0.8rem;
+    margin-left:10px;
+   }
+   /*==main======*/
+   #main{
+    max-width: 1200px;
+    width:90%;
+    padding:50px;
+    border-radius:30px;
+    min-height: 500px;
+    margin:auto;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background-color: #fbd0d9; 
+   }
+   .main-img img{
+    width:100%;
+    height:100%;
+    max-height:400%;
+    object-position: center;
+    object-fit: contain;
+   }
+   .main-text{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+   }
+   .main-text span{
+    color:#ec26b1;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+    font-weight:500;
+   }
+   .main-text h1{
+    font-size: 2.4rem;
+    color:#333333;
+    font-weight: 800;
+   }
+   .main-text h1 font{
+    background-color: #fed2d1;
+    padding:0px 5px;
+
+   }
+   .main-text p{
+    color:#5a5a5a;
+    margin:10px 0px;
+    text-overflow:ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+   }
+   .main-text a{
+    font-weight:800;
+    color:#333333;
+    border-bottom:1px solid #646464;
+    margin-top:30px;
+   }
+   .product-grid-3{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-gap: 15px;
+   max-width: 1200px;
+   width: 90%;
+   margin:15px auto;
+   }
+   .product-grid-box{
+    position: relative;
+    height: 210px;
+    border-radius: 10px;
+    overflow: hidden;
+    display: grid;
+    justify-content: flex-end;
+   }
+   .product-grid-text{
+    position: absolute;
+    left: 14%;
+    top: 50%;
+    transform: translate(-14%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 150px;
+
+   }
+   .product-grid-box img{
+    height:100%;
+    object-fit: cover;
+    object-position: center right;
+   }
+   .product-grid-text span{
+    color: #5a5a5a;
+    font-size: 0.8rem;
+    font-weight: 500;
+   }
+   .product-grid-text a{
+    font-weight:600;
+    color: #272727;
+    margin-top: 10px;
+   }
+   .product-grid-text strong{
+    color:#1d1d1d;
+    font-weight:600;
+    font-size: 1.1rem;
+    line-height:1.5rem;
+   }
+   .product-grid-box1{
+    background-color: #dffbe2;
+   }
+  ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #fbd0d9;
+  }
+  li {
+  float: left;
+}
+
+li a {
+  display: inline-block;
+  padding: 8px;
+  color: white;
+}
+li a:hover {
+  background-color: #f47b99;
+}
+.text{
+  background-color: #fbd0d9;
+  padding: 5px;
+  border-radius: 10PX;
+}
+.text h1{
+  color: white;
+  text-align: center;
+}
+.card{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  background-color: beige;
+}
+header{
+  background-color: #C75B7A;
+}
+.engage{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 900px;
+    max-width: 90vw;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
+.discount h1{
+  background-color: #f47b99;
+  padding: 5px;
+}
+.h1text .text{
+  background-color: #fbd0d9;
+  border-radius: 100px;
+  margin: 100px;
+}
+</style>
+
+<body>
+  <!--Navigation-->
+  <header>
+  <nav class="navigation">
+    <a href="#" class="logo">
+        <img src="del_logo-removebg-preview.png"/>
+    </a>
+    <section id="buttons">
+      <div class="home">
+        <ul>
+          <li><a href="makeup.html">Makeup</a></li>
+          <li><a href="skincare.html">Skincare</a></li>
+        </ul> 
+      </div>
+    </section>
+    <form class="search">
+       <input type="text" placeholder="Search..." required/>
+       <button class="btn btn-outline-success" type="submit">
+        <img src="search.png"/>
+       </button>
+    </form>
+  </nav>
+  </header>
+  <section id="web">
+    <div class="webtext">
+      <h4>SHOWCASE  YOUR  FLAWLESS  BEAUTY  WITH  OUR  PRODUCTS.</h4>
+    </div>
+  </section>
+  <br>
+  </section>
+  <br>
+  <section id="main">
+    <div class="main-text">
+      <span>New Collection</span>
+      <h1><font>Delightful Beauty Products</font></h1>
+      <p>See the bloom in you.</p>
+      <p>SHOP NOW</p>
+    </div>
+
+    <div class="main-img">
+      <img src="cosgirl.PNG"/>
+    </div>
+  </section>
+  <br>
+  <br>
+  <!---MAKEUP-->
+  <section class="product-grid-3">
+    <div class="product-grid-box">
+      <img src="01.jpg">
+      <div class="product-grid-text">
+        <strong>MAKEUPS</strong>
+        <span>Beautify and add color to your face.</span>
+      </div>
+    </div>
+    <!---SKINCARE-->
+    <div class="product-grid-box">
+      <img src="06.jpg">
+      <div class="product-grid-text">
+        <strong>SKINCARE</strong>
+        <span>Enhance the freshness of your youthful self.</span>
+      </div>
+    </div>
+    <!---OTHER-->
+    <div class="product-grid-box">
+      <img src="05.png">
+      <div class="product-grid-text">
+        <strong>HAPPY SHOPPING!</strong>
+        <span>Ensure your bloom as you take home our most sought after products.</span>
+      </div>
+    </div>
+  </section>
+    <br>
+    <br>
+   <section class="engage">
+    <div class="discount">
+      <h1>DISCOUNTED PRODUCTS</h1>
+    </div>
+   </section>
+   <section class="h1text">
+    <div class="text">
+      <h1>ENGAGE IN OUR LATEST PRODUCTS ON SALE!</h1>
+      <div class="card">
+        <img src="foundation.jpg" style="width: 50%;">
+      </div>
+      <br>
+      <div class="card">
+        <img src="blush1.jpg" style="width: 50%;">
+      </div>
+    </div>
+    <br>
+    <div class="text">
+      <h1>SKINCARE PRODUCTS ON 50% OFF!</h1>
+      <div class="card">
+        <img src="sunscreen1.jpg" style="width: 50%;">
+      </div>
+      <br>
+      <div class="card">
+        <img src="toner.jpg" style="width: 50%;">
+      </div>
+    </div>
+   </section>
+    <br>
+</body>
+</html>

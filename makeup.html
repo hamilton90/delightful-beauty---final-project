@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Product Website</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body class="">
+    <header>
+        <h1>Makeup Essentials</h1>
+        <nav>
+           
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                  <a class="navbar-brand" href="homepage.html">HOME</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="skincare.html">SKINCARE</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="makeup.html">MAKEUPS</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+        
+                <div id="container"></div>
+        </nav>
+    </header>
+
+    <main>
+  
+        <section class="products">
+            <div class="product">
+                <img src="foundation.jpg" alt="Product1">
+                <h2>BOBBI BROWN</h2>
+                <p>Skin long wear weightless foundation SPF 15</p>
+                <p> &#8369;3,3222.50</p>
+                <button onclick="addtoCart('Product1')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="foundation1.jpg" alt="Product2">
+                <h2>M.A.C</h2>
+                <p>Studio fix fluid SPF15</p>
+                <p>&#8369;2,400.00</p>
+                <button onclick="addtoCart('Product2')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="foundation2.jpg" alt="Product4">
+                <h2>MORPHE</h2>
+                <p>DFilter Effect Soft-Focus Foundation-Neutral</p>
+                <P>&#8369;1,419.17</P>
+                <button onclick="addtoCart('Product4')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="foundation3.jpg" alt="Product5">
+                <h2>BY TERRY</h2>
+                <p>Hydra-Foundation liquid fouondation with moisturising effect</p>
+                <p> &#8369;2,925.32</p>
+                <button onclick="addtoCart('Product5')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="foundation4.jpg" alt="Product6">
+                <h2>CHARLOTTE TILBURY </h2>
+                <p>Airbrush Flawless</p>
+                <p> &#8369;2,309.00</p>
+                
+                <button onclick="addtoCart('Product6')">Add to Cart</button>
+                
+            </div>
+            <div class="product">
+                <img src="primer.jpg" alt="Product7">
+                <h2>HUDA BEAUTY </h2>
+                <p>Matte Perfection Pre-Makeup Base Primer,Gel</p>
+                <P>&#8369;2,490.00</P>
+                
+                <button onclick="addtoCart('Product7')">Add to Cart</button>
+                
+            </div>
+            <div class="product">
+                <img src="primer1.jpg" alt="Product8">
+                <h2>RARE BEAUTY</h2>
+                <p>Always an Optimist Illuminating Primer Universal Gel</p>
+                <P>&#8369;1,799</P>
+                
+                <button onclick="addtoCart('Product8')">Add to Cart</button>
+                
+            </div>
+            <div class="product">
+                <img src="primer2.jpg" alt="Product9">
+                <h2>REVOLUTION</h2>
+                <p>Makeup Revolution Conceal & Mattifying Primer</p>
+                <p>&#8369;635.94</p>
+                
+                <button onclick="addtoCart('Product9')">Add to Cart</button>
+                
+            </div>
+            <div class="product">
+                <img src="primer3.jpg" alt="Product10">
+                <h2>BY TERRY</h2>
+                <p>Densiliss Primer</p>
+                <p>&#8369;5,740.00</p>
+                
+                <button onclick="addtoCart('Product10')">Add to Cart</button>
+                
+            </div>
+            <div class="product">
+                <img src="primer4.jpg" alt="Product11">
+                <h2>ELF POWER GRIP PRIMER</h2>
+                <p>Hydrating Soft-Focus Effect</p>
+                <p>&#8369;960.00</p>
+                
+                <button onclick="addtoCart('Product11')">Add to Cart</button>
+                
+            </div>
+            <div class="product">
+                <img src="powder.jpg" alt="Product12">
+                <h2>SEPHORA</h2>
+                <p>Translucent Loose Setting Powder</p>
+                <p>&#8369;1,200.00</p>
+                
+                <button onclick="addtoCart('Product12')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="powder1.jpg" alt="Product13">
+                <h2>CARSLAN POWDER</h2>
+                <p>Cushion Oil Control Face Illuminating </p>
+                <p>&#8369;259.00</p>
+                
+                <button onclick="addtoCart('Product13')">Add to Cart</button>
+                
+            </div>
+            <div class="product">
+                <img src="powder2.jpg" alt="Product14">
+                <h2>GECOMO</h2>
+                <p>Loose Setting Powder Oil</p>
+                <P>&#8369;139.00</P>
+                
+                <button onclick="addtoCart('Product14')">Add to Cart</button>
+                
+            </div>
+            <div class="product">
+                <img src="powder3.jpg" alt="Product15">
+                <h2>LICHEE SU</h2>
+                <p>Silky Press Powder Makeup,Smoothers Setting Powder</p>
+                <p>&#8369;150.00</p>
+                
+                <button onclick="addtoCart('Product15')">Add to Cart</button>
+                
+            </div>
+            <div class="product">
+                <img src="powder4.jpg" alt="Product16">
+                <h2>DR.SENSITIVE</h2>
+                <p>All Day No Serum Blur Powder Natural</p>
+                <p>&#8369;150.00</p>
+                
+                <button onclick="addtoCart('Product16')">Add to Cart</button>
+                
+            </div>
+            <div class="product">
+                <img src="blush.jpg" alt="Product17">
+                <h2>MAKEUP BY MARIO</h2>
+                <p>Soft Pop Plumping Blush Veil-Perfect Pink</p>
+                <p>&#8369;4,861.61</p>
+                
+                <button onclick="addtoCart('Product17')">Add to Cart</button>
+                
+            </div>
+            <div class="product">
+                <img src="blush1.jpg" alt="Product18">
+                <h2>SHEGLAM</h2>
+                <p>Sweet Cheeks Blush - Roses Red</p>
+                <p>&#8369;345.00</p>
+                
+                <button onclick="addtoCart('Product18')">Add to Cart</button>
+                
+            </div>
+            <div class="product">
+                <img src="blush2.jpg" alt="Product19">
+                <h2>GUCCI</h2>
+                <p>Retro Star Monnochrome Powder Blush</p>
+                <p>&#8369;550.00</p>
+                
+                <button onclick="addtoCart('Product19')">Add to Cart</button>
+                
+            </div>
+            <div class="product">
+                <img src="blush3.jpg" alt="Product20">
+                <h2>HERHMES PARIS</h2>
+                <p>Hermes Silky Powder Blush</p>
+                <p>&#8369;2,980.00</p>
+                
+                <button onclick="addtoCart('Product20')">Add to Cart</button>
+                
+            </div>
+            <div class="product">
+                <img src="blush4.jpg" alt="Product21">
+                <h2>GUERLAIN TERRACOTTA</h2>
+                <p>Blush The Natural Healthy Glow Power</p>
+                <p>&#8369;2,936.00</p>
+                
+                <button onclick="addtoCart('Product21')">Add to Cart</button>
+                
+            </div>
+            <div class="product">
+                <img src="contour.jpg" alt="Product22">
+                <h2>CLINIQUE</h2>
+                <p>Chubby Stick Sculpting Contour Sculteur Visage</p>
+                <p>&#8369;1,374.84</p>
+                
+                <button onclick="addtoCart('Product22')">Add to Cart</button>
+                
+            </div>
+            <div class="product">
+                <img src="contour1.jpg" alt="Product23">
+                <h2>FENTY BEAUTY MATCH</h2>
+                <p>sStick Matte Contour</p>
+                <p>&#8369;1,872.00</p>
+                
+                <button onclick="addtoCart('Product23')">Add to Cart</button>
+                
+            </div>
+            <div class="product">
+                <img src="contour2.jpg" alt="Product24">
+                <h2>SHEGLAM</h2>
+                <p>Snatch Define Stick-Cream</p>
+                <p>&#8369;394.00</p>
+                
+                <button onclick="addtoCart('Product24')">Add to Cart</button>
+                
+            </div>
+            <div class="product">
+                <img src="contour3.jpg" alt="Product25">
+                <h2>MILKY MAKEUP</h2>
+                <p>Sculpt Contour Stick-Simmer</p>
+                <p>&#8369;1,795.59</p>
+                
+                <button onclick="addtoCart('Product25')">Add to Cart</button>
+                
+            </div>
+            <div class="product">
+                <img src="contour4.jpg" alt="Product26">
+                <h2>ETUDE HOUSE PLAY 101</h2>
+                <p>Stick Contour Duo</p>
+                <p>&#8369;1,795.59</p>
+                
+                <button onclick="addtoCart('Product26')">Add to Cart</button>
+                
+            </div>
+            <div class="product">
+                <img src="shadow.jpg" alt="Product27">
+                <h2>TECHNIC PARIS</h2>
+                <p>Presses Pigments Eyeshadow</p>
+                <p>2,185.44</p>
+                
+                <button onclick="addtoCart('Product27')">Add to Cart</button>
+                
+            </div>
+            <div class="product">
+                <img src="shadow1.jpg" alt="Product28">
+                <h2>STYLENANDA</h2>
+                <p>Pigmented Pallette 25 Colors New Look Eye Shaddow</p>
+                <p>&#8369;95.00</p>
+                
+                <button onclick="addtoCart('Product28')">Add to Cart</button>
+                
+            </div>
+            <div class="product">
+                <img src="shadow2.jpg" alt="Product29">
+                <h2>BUBBLE TEA</h2>
+                <p>Authentic Viseart Eyeshadow Palete Cool Matte </p>
+                <P>&#8369;5,600.00</P>
+                
+                <button onclick="addtoCart('Product29')">Add to Cart</button>
+                
+            </div>
+            <div class="product">
+                <img src="shadow3.jpg" alt="Product30">
+                <h2>[BBIA] RIBBON</h2>
+                <p>Edition Essential Eye Palette 2</p>
+                <p>&#8369;1,290.00</p>
+                
+                <button onclick="addtoCart('Product30')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="shadow4.jpg" alt="Product31">
+                <h2>SEPHORA PRO </h2>
+                <p>Pigment Palette Editorial 2.0 Full Size</p>
+                <p>&#8369;5,422.36</p>
+                
+                <button onclick="addtoCart('Product31')">Add to Cart</button>
+                
+            </div>
+            <div class="product">
+                <img src="mascara.jpg" alt="Product32">
+                <h2>MAYBELLINE</h2>
+                <p>Sky High Mascara</p>
+                <p>&#8369;499.00</p>
+                
+                <button onclick="addtoCart('Product32')">Add to Cart</button>
+                
+            </div>
+            <div class="product">
+                <img src="mascara1.jpg" alt="Product33">
+                <h2>TOTALTEMPTATION</h2>
+                <p>Waterproof Mascara Black</p>
+                <p>&#8369;373.21</p>
+                
+                <button onclick="addtoCart('Product33')">Add to Cart</button>
+                
+            </div>
+            <div class="product">
+                <img src="mascara3.jpg" alt="Product34">
+                <h2>MAYBELLINE</h2>
+                <p>Colossial Volume Express Mascara</p>
+                <p>&#8369;406.89</p>
+               
+                <button onclick="addtoCart('Product34')">Add to Cart</button>
+                
+            </div>
+            <div class="product">
+                <img src="mascara2.jpg" alt="Product35">
+                <h2>GUCCI</h2>
+                <p>Beauty Mascara Obscur 1 Eve Black</p>
+                <p>&#8369;2,900</p>
+                
+                <button onclick="addtoCart('Product35')">Add to Cart</button>
+                
+            </div>
+            <div class="product">
+                <img src="mascara4.jpg" alt="Product36">
+                <h2>OTWOO WATERPROOF MASCARA</h2>
+                <p>Flospring Waterproof Sweat Proof Ultra Fine</p>
+                <p>&#8369;2,900</p>
+                
+                <button onclick="addtoCart('Product36')">Add to Cart</button>
+                
+            </div>
+            <div class="product">
+                <img src="lashes.jpg" alt="Product37">
+                <h2>SIMER</h2>
+                <p>120Pcs Lash Cluster Wispy Natural Look Black Individual Eyelash</p>
+                <p>&#8369;389.00</p>
+                
+                <button onclick="addtoCart('Product37')">Add to Cart</button>
+                
+            </div>
+            <div class="product">
+                <img src="lashes1.jpg" alt="Product38">
+                <h2>EYE LASHES</h2>
+                <p>Clusters Individual Lash </p>
+                <p>&#8369;55.00</p>
+                
+                <button onclick="addtoCart('Product38')">Add to Cart</button>
+                
+            </div>
+            <div class="product">
+                <img src="lashes2.jpg" alt="Product39">
+                <h2>D.QYH</h2>
+                <p>Beautiful Eyes from this start</p>
+                <p>&#8369;113.16</p>
+                
+                <button onclick="addtoCart('Product39')">Add to Cart</button>
+                
+            </div>
+            <div class="product">
+                <img src="lashes3.jpg" alt="Product40">
+                <h2>OREOLA WIMPERN</h2>
+                <p>10 Rows Large Capacity Thick Natural Manga False Eyelashes</p>
+                <p>&#8369;120.00</p>
+                
+                <button onclick="addtoCart('Product40')">Add to Cart</button>
+                
+            </div>
+            <div class="product">
+                <img src="lashes4.jpg" alt="Product41">
+                <h2>GROINNEYA</h2>
+                <p>Cluster Lash Extention Kit DIY Lashes Extention</p>
+                <p>&#8369;187.00</p>
+                
+                <button onclick="addtoCart('Product41')">Add to Cart</button>
+                
+            </div>
+            <div class="product">
+                <img src="lipstick.jpg" alt="Product42">
+                <h2>LAURA MERCIER</h2>
+                <p>Rouge Eclatant Silky Creme Lipstick </p>
+                <p>&#8369;1,699.00</p>
+                
+                <button onclick="addtoCart('Product42')">Add to Cart</button>
+                
+            </div>
+            <div class="product">
+                <img src="lipstick1.jpg" alt="Product43">
+                <h2>DIOR</h2>
+                <p>Rouge Dior Couture Colour Refillable</p>
+                <p>&#8369;2,698.49</p>
+                
+                <button onclick="addtoCart('Product43')">Add to Cart</button>
+                
+            </div>
+            <div class="product">
+                <img src="lipstick2.jpg" alt="Product44">
+                <h2>LAURA MERCIER</h2>
+                <p>velour Lovers Lip Colour</p>
+                <p>&#8369;471.10</p>
+                
+                <button onclick="addtoCart('Product44')">Add to Cart</button>
+               
+            </div>
+            <div class="product">
+                <img src="lipstick3.jpg" alt="Product45">
+                <h2>EVER BILENA </h2>
+                <p>Dream Poem Silky Smooth Lock Color Lasting Bright</p>
+                <p>&#8369;135.00</p>
+                
+                <button onclick="addtoCart('Product45')">Add to Cart</button>
+                
+            </div>
+            <div class="product">
+                <img src="lipstick4.jpg" alt="Product46">
+                <h2>ESCANADA</h2>
+                <p>Lipstick Soft Matte VE Moisturising</p>
+                <p>&#8369;850.00</p>
+                
+                <button onclick="addtoCart('Product46')">Add to Cart</button>
+                
+            </div>
+            <div class="product">
+                <img src="liptint.jpg" alt="Product47">
+                <h2>COLOPOP</h2>
+                <p>Fresh Kiss Lip Cream Scrunchie</p>
+                <p>&#8369;650.00</p>
+                
+                <button onclick="addtoCart('Product47')">Add to Cart</button>
+               
+            </div>
+            <div class="product">
+                <img src="liptint1.jpg" alt="Product48">
+                <h2>COLORPOP</h2>
+                <p>fresh Kiss Glossy Lip Stain Tutti</p>
+                <p>&#8369;650.00</p>
+                
+                <button onclick="addtoCart('Product48')">Add to Cart</button>
+                
+            </div>
+            <div class="product">
+                <img src="liptint2.jpg" alt="Product49">
+                <h2>FENTY BEAUTY</h2>
+                <p>Bomb Universal Lip </p>
+                <p>&#8369;1,690.00</p>
+                
+                <button onclick="addtoCart('Product49')">Add to Cart</button>
+            </div>
+        </section>
+            <div class="cart-section">
+                <h1>SHOPPING CART</h1>
+                <ul id="cart-items"></ul>
+                <p id="empty-message">Your cart is empty.</p>
+                <button id="checkout-btn" onclick="checkout()" style="display: none;">CHECKOUT</button>
+            </div>
+        <div id="checkout-section" class="checkout-section" style="display: none;">
+            <h1>CHECKOUT SUMMARY</h1>
+            <ul id="checkout-items"></ul>
+            <p id="total-items">Total Items : 0</p>
+            <button onclick="confirmOrder()">Confirm Order</button>
+        </div>
+        <script src="script.js"></script>
+    </main>
+</body>
+</html>
